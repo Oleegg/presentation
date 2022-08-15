@@ -1,15 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 
 <body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<p class="title-h1">Google Analytics</p>
+			</section>
+			<section>
+				<p class="mini-title">What is Google Analytics?</p>
+			</section>
+			<section>
+				<p class="mini-title">How does Google Analytics work?</p>
+			</section>
+			<section>
+				<p class="mini-title">Google Analytics includes features:</p>
+				<ul>
+					<li>data visualization and monitoring tools</li>
+					<li>data filtering</li>
+					<li>data collection application program interfaces</li>
+					<li>predictive analytics, intelligence</li>
+					<li>segmentation for analysis of subsets</li>
+					<li>custom reports for advertising</li>
+					<li>email-based sharing</li>
+					<li>integration with other products</li>
+				</ul>
+			</section>
+			<section>
+				<p class="mini-title">Important metrics</p>
+				<ul>
+					<li>Users</li>
+					<li>Bounce rate</li>
+					<li>Sessions</li>
+					<li>Average session duration</li>
+					<li>Percentage of new sessions</li>
+					<li>Pages per session</li>
+					<li>Goal completions</li>
+					<li>Page views</li>
+				</ul>
+			</section>
+		</div>
+	</div>
 
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
 </body>
 
 </html>
